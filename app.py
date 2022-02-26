@@ -27,7 +27,8 @@ def index():
         return(render_template("index.html", default = s))
     else:
         return(render_template("index.html", default = "Predict Default"))
-app.run()
+if __name__ == "__main__":
+    app.run()
 
 
 # In[ ]:
